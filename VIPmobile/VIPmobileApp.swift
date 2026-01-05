@@ -8,10 +8,14 @@
 import SwiftUI
 
 @main
-struct VIPmobileApp: App {
+struct DisneyVIPToursApp: App {
+    @StateObject private var authManager = AuthenticationManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(authManager)
         }
     }
 }
+

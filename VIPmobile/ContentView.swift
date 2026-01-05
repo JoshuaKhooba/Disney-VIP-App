@@ -1,24 +1,15 @@
-//
-//  ContentView.swift
-//  VIPmobile
-//
-//  Created by Joshua Khooba on 12/10/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var authManager: AuthenticationManager
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Group {
+            if authManager.isAuthenticated {
+                MainTabView()
+            } else {
+                LoginView()
+            }
         }
-        .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }

@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		33E5DB4A2EEA363000259333 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 33E5DB492EEA363000259333 /* Auth */; };
+		33E5DB4C2EEA363000259333 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 33E5DB4B2EEA363000259333 /* Functions */; };
+		33E5DB4E2EEA363000259333 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 33E5DB4D2EEA363000259333 /* PostgREST */; };
+		33E5DB502EEA363000259333 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 33E5DB4F2EEA363000259333 /* Realtime */; };
+		33E5DB522EEA363000259333 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 33E5DB512EEA363000259333 /* Storage */; };
+		33E5DB542EEA363000259333 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 33E5DB532EEA363000259333 /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		33E5DB042EEA297300259333 /* VIPmobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPmobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +32,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33E5DB4E2EEA363000259333 /* PostgREST in Frameworks */,
+				33E5DB4C2EEA363000259333 /* Functions in Frameworks */,
+				33E5DB542EEA363000259333 /* Supabase in Frameworks */,
+				33E5DB4A2EEA363000259333 /* Auth in Frameworks */,
+				33E5DB522EEA363000259333 /* Storage in Frameworks */,
+				33E5DB502EEA363000259333 /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,12 @@
 			);
 			name = VIPmobile;
 			packageProductDependencies = (
+				33E5DB492EEA363000259333 /* Auth */,
+				33E5DB4B2EEA363000259333 /* Functions */,
+				33E5DB4D2EEA363000259333 /* PostgREST */,
+				33E5DB4F2EEA363000259333 /* Realtime */,
+				33E5DB512EEA363000259333 /* Storage */,
+				33E5DB532EEA363000259333 /* Supabase */,
 			);
 			productName = VIPmobile;
 			productReference = 33E5DB042EEA297300259333 /* VIPmobile.app */;
@@ -94,6 +115,9 @@
 			);
 			mainGroup = 33E5DAFB2EEA297300259333;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				33E5DB482EEA363000259333 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 33E5DB052EEA297300259333 /* Products */;
 			projectDirPath = "";
@@ -177,7 +201,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -234,7 +258,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -328,6 +352,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		33E5DB482EEA363000259333 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		33E5DB492EEA363000259333 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33E5DB482EEA363000259333 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		33E5DB4B2EEA363000259333 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33E5DB482EEA363000259333 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		33E5DB4D2EEA363000259333 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33E5DB482EEA363000259333 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		33E5DB4F2EEA363000259333 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33E5DB482EEA363000259333 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		33E5DB512EEA363000259333 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33E5DB482EEA363000259333 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		33E5DB532EEA363000259333 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33E5DB482EEA363000259333 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 33E5DAFC2EEA297300259333 /* Project object */;
 }
