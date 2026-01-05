@@ -32,30 +32,32 @@ A SwiftUI-based iOS application designed to simulate a VIP-style guest experienc
 
 ## 📂 Project Structure
 
+```text
 VIPmobile/
 ├── Models/
-│ ├── User.swift
-│ ├── Reservation.swift
-│ ├── Event.swift
-│ └── CheckIn.swift
+│   ├── User.swift
+│   ├── Reservation.swift
+│   ├── Event.swift
+│   └── CheckIn.swift
 │
 ├── ViewModels/
-│ └── AuthenticationManager.swift
+│   └── AuthenticationManager.swift
 │
 ├── Services/
-│ └── SupabaseService.swift
+│   └── SupabaseService.swift
 │
 ├── Views/
-│ ├── LoginView.swift
-│ ├── SignUpView.swift
-│ ├── MainTabView.swift
-│ ├── DashboardView.swift
-│ ├── EventListView.swift
-│ ├── EventDetailView.swift
-│ ├── NewReservationView.swift
-│ └── SettingsView.swift
+│   ├── LoginView.swift
+│   ├── SignUpView.swift
+│   ├── MainTabView.swift
+│   ├── DashboardView.swift
+│   ├── EventListView.swift
+│   ├── EventDetailView.swift
+│   ├── NewReservationView.swift
+│   └── SettingsView.swift
 │
 └── VIPmobileApp.swift
+```
 ---
 
 ## 🚀 Getting Started
@@ -70,48 +72,60 @@ VIPmobile/
 1. Clone the repository:
    ```bash
    git clone https://github.com/JoshuaKhooba/Disney-VIP-App.git
+   ```
 
 2. Open the project:
-
-    open VIPmobile.xcodeproj
+   ```bash
+   open VIPmobile.xcodeproj
+   ```
 
 3. Configure your Supabase credentials (recommended via environment variables).
 
 4. Build and run the project in Xcode.
 
-🔐 Environment Configuration
+---
+
+## 🔐 Environment Configuration
 
 For security reasons, API keys and secrets should not be committed.
 
-Recommended:
+### Recommended:
 
-Store keys in environment variables or a local .env file
+   - Store keys in environment variables or a local ```.env``` file
 
-Ensure .env is listed in .gitignore
+   - Ensure ```.env``` is listed in ```.gitignore```
 
-🧭 Roadmap
+---
 
-Improve reservation conflict handling
+## 🧭 Roadmap
 
-Role-based access (admin vs guest)
+   - Improve reservation conflict handling
 
-Push notifications
+   - Role-based access (admin vs guest)
 
-Offline support
+   - Push notifications
 
-UI polish & animations
+   - Offline support
 
-Unit and UI tests
+   - UI polish & animations
 
-📸 Screenshots
+   - Unit and UI tests
+
+---
+
+## 📸 Screenshots
 
 (Coming soon)
 
-👤 Author
+---
+
+## 👤 Author
 
 Joshua Khooba
 Computer Science Graduate | Data Analytics & Full-Stack Developer
 
-📄 License
+---
+
+## 📄 License
 
 This project is licensed under the MIT License — see the LICENSE file for details.
